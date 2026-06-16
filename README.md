@@ -84,6 +84,41 @@ http://example.com
 https://example.com
 ```
 
+### 🖥️ Graphical User Interface
+
+Built using CustomTkinter for a modern desktop experience.
+
+Features include:
+
+- URL input screen
+- Scrollable analysis reports
+- Error popups
+- Theme switching
+- Exportable reports
+- Responsive interface
+
+### 🌗 Theme Support
+
+Supports:
+
+- Light Mode
+- Dark Mode
+- Custom Pastel Theme
+
+### 📄 Export Reports
+
+Generate and export analysis reports directly to a text file.
+
+Exported reports include:
+
+- URL information
+- Security headers
+- HTTPS status
+- HTTP status codes
+- Server information
+- Directory discovery results
+- Redirect chains
+
 ---
 
 ## 📸 Screenshots
@@ -97,25 +132,64 @@ https://example.com
 
 <img width="377" height="592" alt="image" src="https://github.com/user-attachments/assets/bad7b6dd-8abc-4c99-9660-f9996902748b" />
 
+### Main Menu - GUI
+
+<img width="1536" height="813" alt="image" src="https://github.com/user-attachments/assets/63fef802-40c2-4265-9aef-b1c7ad1d4d49" />
+<img width="1536" height="816" alt="image" src="https://github.com/user-attachments/assets/be532ac1-0f9a-4a9f-ae01-9e0143573454" />
+
+
+### Analyze Screen
+
+<img width="1536" height="812" alt="image" src="https://github.com/user-attachments/assets/400f8cde-b884-4786-822e-68417f0012b9" />
+<img width="1536" height="815" alt="image" src="https://github.com/user-attachments/assets/e783edbb-c99e-48bf-8d51-764281e2c043" />
+
+### Loading Screen
+
+<img width="1536" height="811" alt="image" src="https://github.com/user-attachments/assets/2396b4d6-6d9f-4400-bcd6-f49b2a2a239c" />
+
+### Analysis Report Screen
+
+<img width="1536" height="815" alt="image" src="https://github.com/user-attachments/assets/4c8858bd-09a6-49a1-ae1f-0b1b6d2ddb15" />
+<img width="1536" height="817" alt="image" src="https://github.com/user-attachments/assets/ed8ed447-fdfb-416e-a156-67ea9aef74d7" />
+
+### Exporting Analysis Report
+
+<img width="397" height="176" alt="image" src="https://github.com/user-attachments/assets/2224447d-3620-44ba-9c87-da85ae1eb844" />
+
 
 ---
 
 ## 🛠️ Technologies Used
 
 - Python 3
-- Requests Library
+- Requests
+- CustomTkinter
+- Tkinter
+- Pathlib
+- DateTime
 
 ---
 
 ## 📦 Installation
 
-- Install dependencies:
+### Install dependencies:
 ```bash
-pip install requests
+pip install requests customtkinter
 ```
 
-- Download the code:
-[`main.py`](/main.py), [`analyzer.py`](/analyzer.py)
+### Download
+
+*GUI Version*: (**Recommended**)
+- [`main_gui.py`](/main_gui.py)
+- [`analyzer.py`](/analyzer.py)
+- [`pastel_theme.json`](/pastel_theme.json)
+
+Alternatively, the *console version* can be used:
+
+- [`main.py`](/main.py)
+- [`analyzer.py`](/analyzer.py)
+
+**Store all files in the same project folder; otherwise, you will have to change the path of all files in the code.**
 
 ---
 
@@ -143,7 +217,7 @@ The tool automatically normalizes URLs and generates a security report.
 
 ---
 
-## 📋 Example Output
+## 📋 Example Output (Console Version)
 
 ```text
 ==================================================
@@ -197,13 +271,30 @@ Users are responsible for complying with all applicable laws and regulations whe
 
 This project helped me practice:
 
-- Python programming
-- HTTP requests and responses
-- Security headers
-- Web reconnaissance
-- Exception handling
-- Report generation
-- Cybersecurity fundamentals
+- Python Programming
+- HTTP Requests and Responses
+- Security Headers
+- Web Reconnaissance
+- GUI Development
+- Exception Handling
+- Report Generation
+- File Exporting
+- User Experience Design
+- Cybersecurity Fundamentals
+
+---
+
+## 🚧 Future Improvements
+
+Planned future enhancements include:
+
+- Multithreaded scanning
+- JSON report export
+- Additional security header checks
+- SSL/TLS certificate analysis
+- WHOIS lookup integration
+- DNS information gathering
+- Vulnerability intelligence integrations
 
 ---
 
